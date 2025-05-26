@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 
-type DewfaultInputProps = {
+type DefaultInputProps = {
   id: string;
   labelText: string;
 } & React.ComponentProps<'input'>;
@@ -10,7 +10,7 @@ export function DefaultInput({
   id,
   type,
   ...rest
-}: DewfaultInputProps) {
+}: DefaultInputProps) {
   return (
     <>
       <label htmlFor={id}>{labelText}</label>
